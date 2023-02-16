@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <p class="title-text">Library</p>
+        <div class="addBook">
+            <input type="button" class="addBookBtn" value="Add Book" onclick="display()">
+        </div>
+    </div>
+    <div class="library">
+        <div class="main-library">
+            <div class="main-library-title">
+                <p class="book-name-title">Name</p>
+                <p class="book-author-title">Author</p>
+                <p class="book-page-title">Page</p>
+                <p class="book-read-title">Read</p>
+            </div>
+            <div class="library-books">
+                <div class="bookshelf">
+                    <!-- <p class="book-name">Yeraltından Notlar</p>
+                    <p class="book-author">Fyodor Dostoyevski</p>
+                    <p class="book-page">153</p>
+                    <p class="book-isRead">Read</p>
+                    <input type="button"class="removeBtn" value="X"> -->
+                </div>
+            </div>
+        </div>
+    <div class="info">
+        <div class="totalBooks">TOTAL BOOKS:0</div>
+        <div class="totalReadBooks">READ BOOKS:0</div>
+        <div class="totalPages">TOTAL PAGE COUNT:0</div>
+    </div>
+
+    <div class="addBookCard">
+        <form  onsubmit="return false"class="card">
+            <button class="exitButton" onclick="displayoff()">X</button>
+            <input placeholder="Book Name" type="text" class="name" required>
+            <input placeholder="Author Name" type="text" class="author" required>
+            <input placeholder="Page Count"type="number" class="page" min="0" required>
+            <div class="readCheck">
+                <label for="readcheck">Read</label>
+                <input placeholder="Read"type="checkbox" class="isRead" name="readCheck"> 
+            </div>
+            <input type="submit" class="addBtn" value="ekle">
+        </form>
+    </div>
+    
+</body>
+</html>
